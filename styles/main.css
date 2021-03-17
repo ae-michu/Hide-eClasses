@@ -55,7 +55,7 @@ div.main-content {
     height: 87px;
     background-color: rgb(248, 249, 250);
     overflow: hidden;
-    display: none;
+    display: block;
 }
 
 div.footer {
@@ -70,7 +70,7 @@ div.new-user {
     text-align: center;
     font-size: 15px;
     overflow: hidden;
-    display: block;
+    display: none;
 }
 
 div.spacer {

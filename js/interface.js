@@ -13,7 +13,7 @@ function openSettings(){
 
 //function to open about page in new tab
 function openAbout(){
-    var aboutPage = "https://github.com/ae-michu";
+    var aboutPage = "https://github.com/ae-michu/Hide-eClasses";
     chrome.tabs.create({ url: aboutPage });
 }
 
