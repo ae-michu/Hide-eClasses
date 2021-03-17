@@ -1,0 +1,29 @@
+/* Font settings for easier implementing */
+
+.font-bold {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 450;
+}
+
+.font-light {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.font-regular {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.icons {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    position: relative;
+    top: 2px;
+    left: 78%;
+    transition: 300ms;
+}
+
+.icons:hover {
+    color: rgb(33, 150, 243);
+}

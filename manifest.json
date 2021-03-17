@@ -1,0 +1,13 @@
+{
+    "name": "Hide eClasses",
+    "description": "Hide classes from previous semesters.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "tabs", "scripting"],
+    "action": {
+        "default_popup": "main.html"
+    }
+}

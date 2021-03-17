@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;450&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/styles/fonts.css">
+        <link rel="stylesheet" href="/styles/switch.css">
+    </head>
+    <body>
+        <!-- title header -->
+        <div class="title">
+            <p>
+                <span class="title font-bold">Hide</span>
+                <span class="title font-light">e</span><span class="title font-bold">Classes</span>
+            </p>
+        </div>
+
+        <!-- content container -->
+        <div class="content">
+
+            <!-- main content page -->
+            <div class="main-content">
+                <div class="spacer"></div>
+                <p class="content font-bold">
+                    <span class="content">Enable hiding</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+                <p class="content font-bold">
+                    <span>Select classes to hide</span>
+                    <span class="material-icons select-icon">&#xE039;</span>
+                </p>
+            </div>
+
+            <!-- user not on platform page -->
+            <div class="no-platform">
+                <div class="spacer"></div>
+                <span class="font-bold">You're not browsing the platform. Open it with the button below.</span>
+                <div class="goto-button square-button font-bold">open</div>
+            </div>
+
+            <!-- new user page -->
+            <div class="new-user">
+                <div class="spacer"></div>
+                <span class="font-bold">Hi! Start by going to settings and fill the url field.</span>
+            </div>
+
+            <!-- settings page -->
+            <div class="settings">
+                <div class="spacer"></div>
+                <p class="goback" id="back-button">
+                    <span class="material-icons">&#xE314;</span>
+                    <span class="font-bold goback-text">back</span>
+                </p>
+                <p class="settings-text">
+                    <span class="settings-text font-bold">Url</span>
+                    <input type="text" class="url" id="platform-url">
+                </p>
+                <p>
+                    <span class="settings-text font-bold">Manual edit</span>
+                    <span class="material-icons launch-icon">&#xE89E;</span>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <span class="material-icons icons" id="settings-button">&#xE8B8;</span>
+            <span class="material-icons icons" id="about-button">&#xE8FD;</span>
+        </div>
+
+        <!-- JS -->
+        <script src="/js/interface.js"></script>
+    </body>
+</html>

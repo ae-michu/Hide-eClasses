@@ -1,0 +1,180 @@
+html, body {
+    width: 218px;
+    background-color: rgb(24, 24, 24);
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+div.title {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+
+span.title {
+    position: relative;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+div.content {
+    width: 100%;
+    height: auto;
+    background-color: rgb(248, 249, 250);
+}
+
+p.content {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    height: 10px;
+    font-size: 15px;
+}
+
+span.content {
+    position: relative;
+    top: 2px;
+}
+
+span.select-icon {
+    position: relative;
+    top: 8px;
+    left: 22px;
+    font-size: 25px;
+    transition: 300ms;
+    color: rgb(204, 204, 204);
+}
+
+span.select-icon:hover {
+    color: rgb(33, 150, 243);
+}
+
+div.main-content {
+    width: 100%;
+    height: 87px;
+    background-color: rgb(248, 249, 250);
+    overflow: hidden;
+    display: none;
+}
+
+div.footer {
+    width: 100%;
+    height: 25px;
+}
+
+div.new-user {
+    width: 100%;
+    height: 58px;
+    background-color: rgb(248, 249, 250);
+    text-align: center;
+    font-size: 15px;
+    overflow: hidden;
+    display: block;
+}
+
+div.spacer {
+    width: 100%;
+    height: 15px;
+    background-color: rgb(24, 24, 24);
+}
+
+div.no-platform {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    font-size: 15px;
+    overflow: hidden;
+    display: none;
+}
+
+div.square-button {
+    border-style: solid;
+    color: rgb(204, 204, 204);
+    border-radius: 5px;
+    border-width: 3px;
+    text-align: center;
+    transition: 300ms;
+}
+
+div.square-button:hover {
+    color: rgb(33, 150, 243);
+}
+
+div.goto-button {
+    width: 46px;
+    height: 20px;
+    position: relative;
+    left: 38%;
+    top: 7%;
+}
+
+div.settings {
+    width: 100%;
+    height: 105px;
+    overflow: hidden;
+    display: none;
+}
+
+p.goback {
+    position: relative;
+    top: -10px;
+    left: -2px;
+    width: 60px;
+    color: rgb(204, 204, 204);
+    transition: 300ms;
+}
+
+p.goback:hover {
+    color: rgb(33, 150, 243);
+}
+
+span.goback-text {
+    position: relative;
+    top: -8px;
+    left: -7px;
+}
+
+span.settings-text {
+    position: relative;
+    top: -18px;
+    left: 5px;
+    font-size: 15px;
+}
+
+input.url {
+    position: relative;
+    top: -20px;
+    left: 30px;
+    width: 150px;
+    border: 2px solid rgb(204, 204, 204);
+    background-color: rgb(230, 230, 230);
+    outline: none;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+input.url:hover {
+    border: 2px solid rgb(33, 150, 243);
+}
+
+input.url:focus-visible {
+    border: 2px solid rgb(33, 150, 243);
+}
+
+span.launch-icon {
+    position: relative;
+    top: -11px;
+    left: 104px;
+    font-size: 25px;
+    color: rgb(204, 204, 204);
+    transition: 300ms;
+}
+
+span.launch-icon:hover {
+    color: rgb(33, 150, 243);
+}
+
+p.settings-text {
+    height: 10px;
+}
