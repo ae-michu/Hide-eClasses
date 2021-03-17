@@ -15,5 +15,5 @@ tbd..
 tbd..
 
 ### Resources used in this project:
-* Font - [Rubik](https://fonts.google.com/specimen/Rubik?preview.text_type=custom#standard-styles) under [OFL license]("./styles/Rubik-Font-OFL.txt)
+* Font - [Rubik](https://fonts.google.com/specimen/Rubik?preview.text_type=custom#standard-styles) under [OFL license](/styles/Rubik-Font-OFL.txt)
 * Icons - [Google Fonts (Icons)](https://fonts.google.com/icons#standard-styles) under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt)
