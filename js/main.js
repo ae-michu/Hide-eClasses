@@ -43,3 +43,11 @@ function saveActive() {
         chrome.storage.local.set({"userSettings": newValues})
     });
 }
+
+//send message to background when selected buttons are pressed
+document.getElementById("select-button").addEventListener("click", function(){sendMessage("select")});
+document.getElementById("manual-button").addEventListener("click", function(){sendMessage("manual")});
+
+function sendMessage(sender) {
+    chrome.runtime.sendMessage({button: sender});
+}

@@ -31,3 +31,11 @@ function checkInject(url) {
         }
     });
 }
+
+//add listener for receiving messages from content script about button presses
+chrome.runtime.onMessage.addListener( function(request) {
+    /*
+    console.log(request);
+    TODO
+    */
+});
