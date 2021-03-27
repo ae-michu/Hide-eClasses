@@ -1,5 +1,8 @@
 // background script
 
+//set variables
+var storedUrlActive = false;
+
 //set object storage on installation
 chrome.runtime.onInstalled.addListener(() => {
     var userSettings = {active: false, url: "", classes: []};
@@ -24,18 +27,41 @@ chrome.tabs.onUpdated.addListener( function(tabId, changeInfo, tab) {
 function checkInject(url) {
     chrome.storage.local.get("userSettings", function({ userSettings }) {
         if (url.includes(userSettings["url"]) == true){
+            storedUrlActive = true;
             /*
-            console.log("url match");
-            TODO
+            TODO - automatic code injection
             */
+        }else{
+            storedUrlActive = false;
         }
     });
 }
 
 //add listener for receiving messages from content script about button presses
 chrome.runtime.onMessage.addListener( function(request) {
-    /*
-    console.log(request);
-    TODO
-    */
+    if (request.button === "manual") {
+        /*
+        TODO - show manual input
+        */
+    }else if (request.button === "select") {
+        if (storedUrlActive === true){
+            /*
+            TODO - inject code for interactive editing
+            */
+        }else{
+            injectFunction(function() {
+                alert("Hide eClasses: to select classes please visit your eLearning platform.");
+            });
+        }
+    }
 });
+
+//function to inject functions into current tab
+function injectFunction(passedFunction){
+    chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT}, function(tabs){
+        chrome.scripting.executeScript({
+            target: {tabId: tabs[0].id},
+            function: passedFunction
+        });
+    });
+}
