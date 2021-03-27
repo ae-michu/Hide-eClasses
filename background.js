@@ -28,9 +28,9 @@ function checkInject(url) {
     chrome.storage.local.get("userSettings", function({ userSettings }) {
         if (url.includes(userSettings["url"]) == true){
             storedUrlActive = true;
-            /*
-            TODO - automatic code injection
-            */
+            if (userSettings["active"] == true){
+                injectScript("/js/content.js");
+            }
         }else{
             storedUrlActive = false;
         }
