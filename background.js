@@ -40,9 +40,7 @@ function checkInject(url) {
 //add listener for receiving messages from content script about button presses
 chrome.runtime.onMessage.addListener( function(request) {
     if (request.button === "manual") {
-        /*
-        TODO - show manual input
-        */
+       injectScript("/js/manual_input.js");
     }else if (request.button === "select") {
         if (storedUrlActive === true){
             /*
@@ -62,6 +60,16 @@ function injectFunction(passedFunction){
         chrome.scripting.executeScript({
             target: {tabId: tabs[0].id},
             function: passedFunction
+        });
+    });
+}
+
+//function to inject scripts into current tab
+function injectScript(script){
+    chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT}, function(tabs){
+        chrome.scripting.executeScript({
+            target: {tabId: tabs[0].id},
+            files: [script]
         });
     });
 }
