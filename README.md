@@ -25,3 +25,7 @@ After installing go to settings and paste url of your e-learning platform in the
 ### Resources used in this project:
 * Font - [Rubik](https://fonts.google.com/specimen/Rubik?preview.text_type=custom#standard-styles) under [OFL license](/styles/Rubik-Font-OFL.txt)
 * Icons - [Google Fonts (Icons)](https://fonts.google.com/icons#standard-styles) under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+##
+#### Legal note
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
