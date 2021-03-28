@@ -43,9 +43,8 @@ chrome.runtime.onMessage.addListener( function(request) {
        injectScript("/js/manual_input.js");
     }else if (request.button === "select") {
         if (storedUrlActive === true){
-            /*
-            TODO - inject code for interactive editing
-            */
+            injectCSS("/styles/interactive_input.css");
+            injectScript("/js/interactive_input.js");
         }else{
             injectFunction(function() {
                 alert("Hide eClasses: to select classes please visit your eLearning platform.");
@@ -70,6 +69,16 @@ function injectScript(script){
         chrome.scripting.executeScript({
             target: {tabId: tabs[0].id},
             files: [script]
+        });
+    });
+}
+
+//function to inject css into current tab
+function injectCSS(file){
+    chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT}, function(tabs){
+        chrome.scripting.insertCSS({
+            target: {tabId: tabs[0].id},
+            files: [file]
         });
     });
 }
